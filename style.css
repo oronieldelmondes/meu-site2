@@ -1,0 +1,405 @@
+/*estilo do geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.rda-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cdaa48;
+    border: 0;
+    border-radius: 50px ;
+    cursor: pointer;  
+}
+
+/*estilo do cabeçado */
+header{
+    padding: 40px 0 90px;
+
+}
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interface  img {
+    height: 100px;
+
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover {
+    color:#cdaa48;
+    transform: scale(1.06);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+button:hover{
+    box-shadow: 0px 0 8px #cdaa48;
+    transform: scale(1.06);
+}
+
+/*estilo menu mobile*/
+/*
+.rda-abrir-menu i{
+    color: #cdaa48;
+    font-size: 35px;
+}
+
+.menu-mobile{
+    background-color: #1b1a16;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    z-index: 99999;
+    width: %;
+    overflow: hidden;
+}
+.menu-mobile .rda-fechar {
+    color: #cdaa48;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #e3e0d6;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    display: block;
+}
+.menu-mobile nav ul li a:hover{
+background-color:black;
+}
+
+.overlay-menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 8888;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+
+}
+*/
+
+/*section topo-site*/
+
+.topo-site{
+   
+}
+
+
+section .topo-site{
+    padding: 40px 4%;
+    
+
+}
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-site img{
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 2 2 2;
+
+}
+.topo-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 44px;
+    line-height: 64px;
+}
+.topo-site .txt-topo-site h1 span {
+    color: #cdaa48;
+}
+
+.topo-site p{
+    color: #fff;
+    margin: 50px 0;
+
+}
+
+
+.topo-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.especialidades p{
+      text-align: left;
+}
+
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+.titulo {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 0px;
+}
+.titulo span{
+    color: #cdaa48;
+}
+
+section.especialidades{
+    padding: 40px 4%;
+       
+}
+.especialidades .interface{
+    margin-top: 30px;
+    margin-bottom: 70px;/* MARGIN ENTRE QUEM SOU EU E ESPECIALIDADES*/
+}
+.especialidades-box{
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 95px;/*MARGON ENTRE MINHAS ESPECIALIDADES E AS ESPECIALIDADES*/
+    align-items: center;
+}
+.flex .especialidades-box{
+    align-items: center;
+}
+.especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+}
+.especialidades-box > i{
+    font-size: 80px;
+    color: #cdaa48;
+    
+}
+.interface .flex {
+  justify-content: center;
+}
+
+.especialidades-box {
+  text-align: center;
+}
+
+.especialidades-box h2{
+    font-size: 32px;
+    margin: 15px 0px;
+}
+
+/*sobre vocÊ*/
+
+section.sobre {
+    padding: 30px 4%;
+    
+
+}
+
+.sobre .txt-sobre {
+    color: #fff ;
+    padding: 40px;
+    line-height: 40px;
+}
+.sobre .flex img {
+    height: 500px;
+
+}
+.sobre .sobre-h {
+    color: #e3e0d6;
+    font-size: 48px;   
+}
+
+.sobre .sobre-p{
+    font-size: 16px;
+    margin-top: 35px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre span{
+    color: #cdaa48;
+    display: block;
+}
+.txt-sobre .rda-redes button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #2f56c2;
+    font-size: 30px; 
+}
+
+/*estilo do portifolio*/
+.portifolio{
+    padding: 82px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.img-portifolio{
+    width: 360px;
+    height: 460px;
+    background-color: #2f56c2;
+
+}
+
+.portifolio .flex {
+    justify-content: space-around;
+}
+
+.img-portifolio {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    
+}
+.img-portifolio{
+    background-position:100% 100%;
+    border-radius: 60px;
+}
+
+@media screen and (max-width: 1020px) {
+    /*gerais*/
+    .flex{
+        flex-direction: column-reverse;
+    }   
+
+.interface  img {
+    height: 70px;
+
+}
+/*cabeçalho*/
+.menu-desktop, .rda-contato{
+    display: none;
+}
+/*topo o site*/
+.topo-site{
+    padding: 0px 40px;
+    margin-top: -100px;
+}
+
+.topo-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 31px;
+    line-height: 33px;
+    margin-top: -30px;
+    text-align: center;
+    
+}
+.topo-site img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2 2 2;
+    
+
+}
+
+.topo-site p{
+    font-size: 12px;
+    text-align: justify;
+
+}
+/*ESPECIALIDADES*/
+
+.titulo {
+    color: #fff;
+    font-size: 33px;
+    text-align: center;
+    margin-top: -72px;
+    line-height: 33px;
+}
+.especialidades-box h2{
+    font-size: 22px;
+    margin: 15px 0px;
+}
+.especialidades-box{
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 55px;/*MARGON ENTRE MINHAS ESPECIALIDADES E AS ESPECIALIDADES*/
+    align-items: center;
+    margin: 20px;
+}
+.interface > .flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.especialidades-box p{
+    font-size: 12px;
+    text-align: justify;
+    
+}
+.sobre .flex img {
+    height: 500px;
+    display: none;
+
+}
+.sobre .sobre-h {
+    color: #e3e0d6;
+    font-size: 27px;
+    text-align: center;   
+}
+.sobre .sobre-p{
+    font-size: 12px;
+    margin-top: 35px;
+    line-height: 17px;
+    text-align: justify;
+}
+.txt-sobre .rda-redes button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #2f56c2;
+    font-size: 30px;
+    margin-top: 30px; 
+}
+.especialidades .interface{
+    margin-top: 30px;
+    margin-bottom: 0px;/* MARGIN ENTRE QUEM SOU EU E ESPECIALIDADES*/
+}
+.portifolio{
+    margin-top: 100px;
+}
+}
+
